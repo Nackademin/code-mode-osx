@@ -5,9 +5,9 @@ Trigger a text-to-speech warning when you go from working hard to not working so
 ## Usage
 
 1. Download our app [Flow Triggers](https://src.rodolfo.nu/flowtriggers/flow-triggers.zip)
-
-Flow Trigger tracks your activity within OS X and triggers shell commands when given conditions are met.
-
+   
+   Flow Trigger tracks your activity within OS X and triggers shell commands when given conditions are met.
+   
 2. Configure Flow Triggers to track your flow. See more detailed instructions at the end of this document.
 
 3. Add a new trigger in Flow Triggers. Set __Trigger type__ to __Switch__ and __Trigger on__ to __Every minute__.
@@ -15,8 +15,8 @@ Flow Trigger tracks your activity within OS X and triggers shell commands when g
 4. Click __Edit conditions__ and create the condition __Flow is greater than or equal to 0.75__.
 
 5. Paste this command into __Shell command__ `osascript /path/to/your/computer-says-no.scpt $flow`
-
-Change `/path/to/your/computer-says-no.scpt` to match the location of `computer-says-no.scpt` on your Mac.
+   
+   Change `/path/to/your/computer-says-no.scpt` to match the location of `computer-says-no.scpt` on your Mac.
 
 6. All done! You will now get a warning whenever your flow in Flow Triggers dips below 75%.
 
@@ -32,14 +32,14 @@ In order for Flow Triggers to be able to measure your flow, you need to tell it 
 
 1. In Flow Triggers, go to the __Filter__ tab.
 2. Start by adding your productive applications and pages.
-
-__Application__ filters must match the application names __exactly__, e.g. __Sublime Text__ and not just __Sublime__
-__Pages__ filters match the subdomain/domain and top domain without __www__, e.g. __google.com__, __docs.google.com__
-
-To make the filters more dynamic you can make the filter string a [regular expression](https://en.wikipedia.org/wiki/Regular\_expression) by checking __Regular expression__. Only do this if you're familiar with regular expressions.
-
-To increase the accuracy of the flow measuring, you can change __Filter type__ to match the main method of input, if there is one.
-
+   
+   __Application__ filters must match the application names __exactly__, e.g. __Sublime Text__ and not just __Sublime__
+   __Pages__ filters match the subdomain/domain and top domain without __www__, e.g. __google.com__, __docs.google.com__
+   
+   To make the filters more dynamic you can make the filter string a [regular expression](https://en.wikipedia.org/wiki/Regular\_expression) by checking __Regular expression__. Only do this if you're familiar with regular expressions.
+   
+   To increase the accuracy of the flow measuring, you can change __Filter type__ to match the main method of input, if there is one.
+   
 3. Change to the __Unproductive__ list and add all of your unproductive applications and pages.
 
 ### Creating triggers
