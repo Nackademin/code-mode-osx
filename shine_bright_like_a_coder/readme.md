@@ -36,8 +36,9 @@ In order for Flow Triggers to be able to measure your flow, you need to tell it 
 
 2. Start by adding your productive applications and pages.
    
-   __Application__ filters must match the application names __exactly__, e.g. __Sublime Text__ and not just __Sublime__
-   __Pages__ filters match the subdomain/domain and top domain without __www__, e.g. __google.com__, __docs.google.com__
+   __Application__ filters must match the application names __exactly__, e.g. __Sublime Text__ and not just __Sublime__.
+   
+   __Pages__ filters match the subdomain/domain and top domain without __www__, e.g. __google.com__ or __docs.google.com__
    
    To make the filters more dynamic you can make the filter string a [regular expression](https://en.wikipedia.org/wiki/Regular\_expression) by checking __Regular expression__. Only do this if you're familiar with regular expressions.
    
@@ -67,7 +68,7 @@ You can specify as many conditions as you want and make the trigger fire wheneve
 
 The shell command will be executed once all conditions are fulfilled. The launch path is always __/usr/bin/env__.
 
-You can include Flow Triggers variables in each call just by inserting them into the field. For example, in `osascript /path/to/your/script.scpt $flow $app`, `$flow` would be replaced with the currently active application or web page and `$app` would be replaced with the name of the application or URL of the page. E.g. `osascript /path/to/your/script.scpt 0.63 "docs.google.com"`
+You can include Flow Triggers variables in each call just by inserting them into the field. For example, in `osascript /path/to/your/script.scpt $flow $app`, `$flow` would be replaced with your current flow percent and `$app` would be replaced with the name of the application or URL of the page. E.g. `osascript /path/to/your/script.scpt 0.63 "docs.google.com"`
 
 Available variables are as follows:
 
@@ -75,7 +76,7 @@ Available variables are as follows:
 * __$appProductive__ Whether the current application/page is considered productive (1), neutral (0) or unproductive (-1). Example: __-1__
 * __$appInputKeypresses__ The total number of keypresses in the current application/page. Example: __12701__
 * __$appInputMouseclicks__ The total number of mouse clicks in the current application/page. Example: __495__
-* __$appInputMousemoved__ The total number of pixels travelled by the mouse in the current application/page. Example: __324923.1___
+* __$appInputMousemoved__ The total number of pixels travelled by the mouse in the current application/page. Example: __324923.1__
 * __$appInputMousescrolled__ The total number of pixels scrolled in the current application/page. Example: __3234.5__
 * __$appInputAppswitches__ The total number of times the current application/page has been switched to. Example: __103__
 * __$appInputTimetracked__ The total number of seconds spent in the current application/page. Example: __3645__
@@ -83,19 +84,19 @@ Available variables are as follows:
 * __$flowDerivative__ The change in flow during the last minute. Example: __-0.32__
 * __$inputKeypresses__ The total number of keypresses in any application/page. Example: __12701__
 * __$inputMouseclicks__ The total number of mouse clicks in any application/page. Example: __495__
-* __$inputMousemoved__ The total number of pixels travelled by the mouse in any application/page. Example: __324923.1___
+* __$inputMousemoved__ The total number of pixels travelled by the mouse in any application/page. Example: __324923.1__
 * __$inputMousescrolled__ The total number of pixels scrolled in any application/page. Example: __3234.5__
 * __$inputAppswitches__ The total number of times any application/page has been switched to. Example: __103__
 * __$inputTimetracked__ The total number of seconds spent in any application/page. Example: __3645__
 * __$productiveKeypresses__ The total number of keypresses in any productive application/page. Example: __12701__
 * __$productiveMouseclicks__ The total number of mouse clicks in any productive application/page. Example: __495__
-* __$productiveMousemoved__ The total number of pixels travelled by the mouse in any productive application/page. Example: __324923.1___
+* __$productiveMousemoved__ The total number of pixels travelled by the mouse in any productive application/page. Example: __324923.1__
 * __$productiveMousescrolled__ The total number of pixels scrolled in any productive application/page. Example: __3234.5__
 * __$productiveAppswitches__ The total number of times any productive application/page has been switched to. Example: __103__
 * __$productiveTimetracked__ The total number of seconds spent in any productive application/page. Example: __3645__
 * __$unproductiveKeypresses__ The total number of keypresses in any unproductive application/page. Example: __12701__
 * __$unproductiveMouseclicks__ The total number of mouse clicks in any unproductive application/page. Example: __495__
-* __$unproductiveMousemoved__ The total number of pixels travelled by the mouse in any unproductive application/page. Example: __324923.1___
+* __$unproductiveMousemoved__ The total number of pixels travelled by the mouse in any unproductive application/page. Example: __324923.1__
 * __$unproductiveMousescrolled__ The total number of pixels scrolled in any unproductive application/page. Example: __3234.5__
 * __$unproductiveAppswitches__ The total number of times any unproductive application/page has been switched to. Example: __103__
 * __$unproductiveTimetracked__ The total number of seconds spent in any unproductive application/page. Example: __3645__
