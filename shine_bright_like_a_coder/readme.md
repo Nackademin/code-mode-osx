@@ -6,7 +6,7 @@ Before you're ready to follow the steps below, you need to make sure that your P
 
 ## Usage
 
-1. Download our app [Flow Triggers](https://src.rodolfo.nu/flowtriggers/flow-triggers.zip)
+1. Download our app [Flow Triggers](https://src.rodolfo.nu/flow-triggers/flow-triggers.zip)
    
    Flow Trigger tracks your activity within OS X and triggers shell commands when given conditions are met.
    
