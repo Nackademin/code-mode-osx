@@ -31,6 +31,7 @@ Flow Trigger keeps track of your number of keypresses, mouse activity and applic
 In order for Flow Triggers to be able to measure your flow, you need to tell it which applications and web pages that are productive and which are unproductive.
 
 1. In Flow Triggers, go to the __Filter__ tab.
+
 2. Start by adding your productive applications and pages.
    
    __Application__ filters must match the application names __exactly__, e.g. __Sublime Text__ and not just __Sublime__
@@ -64,7 +65,7 @@ You can specify as many conditions as you want and make the trigger fire wheneve
 
 The shell command will be executed once all conditions are fulfilled. The launch path is always __/usr/bin/env__.
 
-You can include Flow Triggers variables in each calls just by inserting them into the field. For example, in `osascript /path/to/your/script.scpt $flow $app`, `$flow` would be replaced with the currently active application or web page and `$app` would be replaced with the name of the application or URL of the page. E.g. `osascript /path/to/your/script.scpt 0.63 "docs.google.com"`
+You can include Flow Triggers variables in each call just by inserting them into the field. For example, in `osascript /path/to/your/script.scpt $flow $app`, `$flow` would be replaced with the currently active application or web page and `$app` would be replaced with the name of the application or URL of the page. E.g. `osascript /path/to/your/script.scpt 0.63 "docs.google.com"`
 
 Available variables are as follows:
 
